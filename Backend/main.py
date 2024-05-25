@@ -11,7 +11,7 @@ import src.routers.icons as icons
 
 app = FastAPI()
 
-origins = ['http://localhost:8081']
+origins = ['http://localhost:5173']
 
 app.add_middleware(
     CORSMiddleware,

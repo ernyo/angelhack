@@ -6,7 +6,7 @@ export default function Header() {
       <nav className="flex items-center justify-between px-20 py-4">
         <div className="flex items-center">
           <a href="/" className="font-bold text-3xl text-indigo-500 mr-4">Silver Stories</a>
-          <img src="path/to/logo.png" alt="Logo" className="h-10 w-10" />
+          <img src="https://cdn-icons-png.freepik.com/512/5988/5988343.png" alt="Logo" className="h-10 w-10" />
         </div>
         <div className="flex flex-row">
           <Language />

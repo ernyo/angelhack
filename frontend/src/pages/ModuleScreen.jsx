@@ -1,10 +1,13 @@
-import Lessons from "../content/Lessons.json";
+import lesson1 from "../content/Lessons.json";
+import { Link } from "react-router-dom";
 
 const Grid = ({ lesson }) => {
     return (
-        <div className="grid-item h-40 w-64 bg-indigo-500">
-            <p>{lesson.lesson_id}</p>
-        </div>
+        <Link to={`/modules/${lesson.lesson_id}`}>
+            <div className="grid-item h-40 w-64 bg-indigo-500 hover:rounded-xl">
+                <p>{lesson.lesson_id}</p>
+            </div>
+        </Link>
     );
 };
 
@@ -18,12 +21,11 @@ const Module = ({lesson}) => {
 }
 
 const ModuleScreen = () => {
+
     return (
         <div className='flex justify-center my-32'>
             <div className="grid grid-cols-3 gap-8">
-                {Lessons.map((lesson) => (
-                    <Module key={lesson.lesson_id} lesson={lesson} />
-                ))}
+                <Module key={lesson1.lesson_id} lesson={lesson1} />
             </div>
         </div>
     );

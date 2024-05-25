@@ -1,81 +1,191 @@
-[
-    {
-      "lesson_id": 1,
-      "scenes": [
-        {
+{
+  "lesson_id": 1,
+  "scenes": [
+      {
           "scene_id": 1,
+          "text": "Mr. and Mrs. Johnson, retired teachers, sit down to discuss their retirement savings plan. They are concerned about managing their finances effectively in their older age.",
           "icons": [
-            {
-              "icon_id": "icon1",
-              "position": 10
-            },
-            {
-              "icon_id": "icon2",
-              "position": 20
-            }
+              {
+                  "icon_id": "icon11.png",
+                  "position": {
+                      "x": 20.0,
+                      "y": 40.0
+                  }
+              },
+              {
+                  "icon_id": "icon12.png",
+                  "position": {
+                      "x": 80.0,
+                      "y": 70.0
+                  }
+              }
           ],
           "branching": {
-            "decision_point": "choice1",
-            "next_scenes": {
-              "option1": 2,
-              "option2": 3
-            }
+              "decision_point": "What should the Johnsons prioritize first?",
+              "next_scenes": {
+                  "exploreSavingsOptions": 2,
+                  "exploreInvestmentOptions": 3
+              }
           }
-        },
-        {
+      },
+      {
           "scene_id": 2,
+          "text": "The Johnsons decide to focus on exploring different savings options. They are keen on understanding the benefits of saving and creating a budget to manage their expenses.",
           "icons": [
-            {
-              "icon_id": "icon3",
-              "position": 30
-            }
+              {
+                  "icon_id": "icon13.png",
+                  "position": {
+                      "x": 30.0,
+                      "y": 60.0
+                  }
+              },
+              {
+                  "icon_id": "icon17.png",
+                  "position": {
+                      "x": 75.0,
+                      "y": 20.0
+                  }
+              }
           ],
           "branching": {
-            "decision_point": "choice2",
-            "next_scenes": {
-              "option1": 4,
-              "option2": 5
-            }
+              "decision_point": "What aspect of savings should the Johnsons focus on?",
+              "next_scenes": {
+                  "exploreBudgetingSkills": 4,
+                  "understandCPF": 5
+              }
           }
-        }
-      ]
-    },
-    {
-      "lesson_id": 2,
-      "scenes": [
-        {
-          "scene_id": 1,
+      },
+      {
+          "scene_id": 3,
+          "text": "The Johnsons decide to explore investment options to grow their retirement funds. They are interested in learning about low-risk investment opportunities suitable for their age group.",
           "icons": [
-            {
-              "icon_id": "icon4",
-              "position": 40
-            }
+              {
+                  "icon_id": "icon31.png",
+                  "position": {
+                      "x": 40.0,
+                      "y": 30.0
+                  }
+              },
+              {
+                  "icon_id": "icon39.png",
+                  "position": {
+                      "x": 85.0,
+                      "y": 80.0
+                  }
+              }
           ],
           "branching": {
-            "decision_point": "choice3",
-            "next_scenes": {
-              "option1": 6,
-              "option2": 7
-            }
+              "decision_point": "Which investment avenue should the Johnsons consider?",
+              "next_scenes": {
+                  "exploreBonds": 6,
+                  "exploreStockMarket": 7
+              }
           }
-        },
-        {
-          "scene_id": 2,
+      },
+      {
+          "scene_id": 4,
+          "text": "The Johnsons decide to focus on developing budgeting skills. They start tracking their expenses and setting financial goals for a secure future.",
           "icons": [
-            {
-              "icon_id": "icon5",
-              "position": 50
-            }
+              {
+                  "icon_id": "icon17.png",
+                  "position": {
+                      "x": 30.0,
+                      "y": 40.0
+                  }
+              },
+              {
+                  "icon_id": "icon18.png",
+                  "position": {
+                      "x": 70.0,
+                      "y": 70.0
+                  }
+              }
           ],
           "branching": {
-            "decision_point": "choice4",
-            "next_scenes": {
-              "option1": 8,
-              "option2": 9
-            }
+              "decision_point": "",
+              "next_scenes": {
+                  "Next_scene": -2
+              }
           }
-        }
-      ]
-    }
-  ]
-  
+      },
+      {
+          "scene_id": 5,
+          "text": "The Johnsons choose to understand the CPF (Central Provident Fund) system for their retirement planning. They learn about the benefits and contributions to ensure a stable financial future.",
+          "icons": [
+              {"icon_id": "icon15.png",
+              "position": {
+                  "x": 20.0,
+                  "y": 30.0
+              }
+          },
+          {
+              "icon_id": "icon11.png",
+              "position": {
+                  "x": 80.0,
+                  "y": 70.0
+              }
+          }
+      ],
+      "branching": {
+          "decision_point": "",
+          "next_scenes": {
+              "Next_scene": -2
+          }
+      }
+  },
+  {
+      "scene_id": 6,
+      "text": "The Johnsons explore investing in bonds as a low-risk option. They understand the stability and potential returns from bond investments suitable for their retirement goals.",
+      "icons": [
+          {
+              "icon_id": "icon33.png",
+              "position": {
+                  "x": 40.0,
+                  "y": 60.0
+              }
+          },
+          {
+              "icon_id": "icon391.png",
+              "position": {
+                  "x": 80.0,
+                  "y": 20.0
+              }
+          }
+      ],
+      "branching": {
+          "decision_point": "",
+          "next_scenes": {
+              "Next_scene": -2
+          }
+      }
+  },
+  {
+      "scene_id": 7,
+      "text": "The Johnsons explore the stock market as an investment option. They learn about the basics of stock investments, diversification, and analyze potential risks involved.",
+      "icons": [
+          {
+              "icon_id": "icon34.png",
+              "position": {
+                  "x": 30.0,
+                  "y": 40.0
+              }
+          },
+          {
+              "icon_id": "icon37.png",
+              "position": {
+                  "x": 75.0,
+                  "y": 70.0
+              }
+          }
+      ],
+      "branching": {
+          "decision_point": "",
+          "next_scenes": {
+              "Finish": -1
+          }
+      }
+  }
+],
+"language": "en",
+"_id": "66522b54d1a9f91cfd6b1c3c"
+}

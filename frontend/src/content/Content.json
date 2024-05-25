@@ -1,0 +1,34 @@
+[
+    {
+        "direction": "left",
+        "title": "Text-to-Story",
+        "img": "https://cdn-icons-png.flaticon.com/512/6802/6802191.png",
+        "text": "Start Generating!",
+        "href": "/text",
+        "p": "Curious about CPF, investments, or retirement planning? Just type in your question or topic, and let our app guide you with clear and simple explanations. Easy peasy, lah!"
+    },
+    {
+        "direction": "right",
+        "title": "URL-to-Story",
+        "img": "https://assets-global.website-files.com/60f35132d5febb6f03ec9d7a/63f4c741a7d0d20425821fec_ICONFORSIGNUP_1.webp",
+        "text": "Generate with URLs!",
+        "href": "/text",
+        "p": "Found a useful article online? Paste the URL here, and we'll break down the key points into easy-to-understand scenes, tailored for you. No more chim words, only simple advice."
+    },
+    {
+        "direction": "left",
+        "title": "Create a Story",
+        "img": "https://cdn-icons-png.flaticon.com/512/856/856994.png",
+        "text": "Let's Build!",
+        "href": "/story",
+        "p": "Create your own financial journey! Move scenes around to customize your learning experience, just like arranging your favorite dishes at a hawker centre. Make it your own, step by step."
+    },
+    {
+        "direction": "right",
+        "title": "Online Modules",
+        "img": "https://cdn-icons-png.flaticon.com/512/1042/1042401.png",
+        "text": "Start Learning!",
+        "href": "/modules",
+        "p": "Choose from our range of financial modules on savings, insurance, and more. Perfect for personal growth and ensuring your golden years are huat ah! Let's get smart about money."
+    }
+]

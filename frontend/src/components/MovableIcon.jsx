@@ -36,7 +36,7 @@ const MovableIcon = () => {
                 setDistanceY(mousePos.y - parseInt(window.getComputedStyle(e.target).getPropertyValue("background-position").split(' ')[1].slice(0, -2)))
             }}
             onMouseUp={() => setOnImage(false)}
-            onMouseMove={e => {
+            onMouseMove={() => {
                 if (onImage) {
                     setImageCenter(`${mousePos.x - distanceX}px ${mousePos.y - distanceY}px`)
                 }

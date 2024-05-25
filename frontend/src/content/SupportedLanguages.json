@@ -10,5 +10,9 @@
     {
         "name": "Bahasa Melayu",
         "language": "Malay"
+    },
+    {
+        "name": "தமிழ்",
+        "language": "Tamil"
     }
 ]

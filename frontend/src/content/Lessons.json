@@ -1,0 +1,81 @@
+[
+    {
+      "lesson_id": 1,
+      "scenes": [
+        {
+          "scene_id": 1,
+          "icons": [
+            {
+              "icon_id": "icon1",
+              "position": 10
+            },
+            {
+              "icon_id": "icon2",
+              "position": 20
+            }
+          ],
+          "branching": {
+            "decision_point": "choice1",
+            "next_scenes": {
+              "option1": 2,
+              "option2": 3
+            }
+          }
+        },
+        {
+          "scene_id": 2,
+          "icons": [
+            {
+              "icon_id": "icon3",
+              "position": 30
+            }
+          ],
+          "branching": {
+            "decision_point": "choice2",
+            "next_scenes": {
+              "option1": 4,
+              "option2": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "scenes": [
+        {
+          "scene_id": 1,
+          "icons": [
+            {
+              "icon_id": "icon4",
+              "position": 40
+            }
+          ],
+          "branching": {
+            "decision_point": "choice3",
+            "next_scenes": {
+              "option1": 6,
+              "option2": 7
+            }
+          }
+        },
+        {
+          "scene_id": 2,
+          "icons": [
+            {
+              "icon_id": "icon5",
+              "position": 50
+            }
+          ],
+          "branching": {
+            "decision_point": "choice4",
+            "next_scenes": {
+              "option1": 8,
+              "option2": 9
+            }
+          }
+        }
+      ]
+    }
+  ]
+  

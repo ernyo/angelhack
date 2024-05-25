@@ -1,4 +1,4 @@
-import lesson1 from "../content/Lessons.json";
+import lesson1 from "../modules/lesson1.json";
 import { Link } from "react-router-dom";
 
 const Grid = ({ lesson }) => {

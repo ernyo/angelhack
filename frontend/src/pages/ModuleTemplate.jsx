@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import SceneCard from "../components/SceneCard";
-import lesson1 from "../content/Lessons.json";
+import lesson1 from "../modules/lesson1.json";
 import { useState } from "react";
 import cafe from "../public/cafe.jpg"
 

@@ -20,7 +20,7 @@ const ContentBlockRight = ({title, img, text, href, p}) => {
         <section className="flex flex-col justify-between">
             <h1 className="text-2xl font-bold">{title}</h1>
             <p className="text-wrap">{p}</p>
-            <Button text={text} href={href}/>
+            <Button text={text} href={href} />
         </section>
     </section>
   )

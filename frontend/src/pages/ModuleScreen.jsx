@@ -1,31 +1,28 @@
-import lesson1 from "../modules/lesson1.json";
-import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const Grid = ({ lesson }) => {
+const Grid = ({ lesson, count }) => {
+    const navigate = useNavigate()
+    const handleClick = () => {
+        navigate(`/modules/${count}`,  { state: { lessonData: lesson } })
+    }
     return (
-        <Link to={`/modules/${lesson.lesson_id}`}>
-            <div className="grid-item h-40 w-64 bg-indigo-500 hover:rounded-xl">
-                <p>{lesson.lesson_id}</p>
-            </div>
-        </Link>
+        <div onClick={handleClick} className="grid-item h-28 w-40 bg-indigo-500 rounded-xl text-lg flex justify-center items-center text-white">
+            <p className="font-semibold text-center">Module {count}</p>
+        </div>
     );
 };
 
-const Module = ({lesson}) => {
-    return (
-        <div>
-            <Grid lesson={lesson}/>
-            <p className="font-semibold">Module {lesson.lesson_id}: Financial Literacy</p>
-        </div>
-    )
-}
-
 const ModuleScreen = () => {
-
+    let count = 1
+    const location = useLocation();
+    const { lessonData } = location.state || {}; // Handle undefined state
+    console.log(lessonData);
     return (
         <div className='flex justify-center my-32'>
             <div className="grid grid-cols-3 gap-8">
-                <Module key={lesson1.lesson_id} lesson={lesson1} />
+                {lessonData && lessonData.map((lesson) => (
+                    <Grid key={lesson.lesson_id} lesson={lesson} count={count++}/>
+                ))}
             </div>
         </div>
     );

@@ -11,7 +11,7 @@ import src.routers.icons as icons
 
 app = FastAPI()
 
-origins = ['https://angelhack-4zejcui38-ernests-projects-98b60b05.vercel.app']
+origins = ['https://angelhack-czxu98nwj-ernests-projects-98b60b05.vercel.app']
 
 app.add_middleware(
     CORSMiddleware,
